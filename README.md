@@ -8,6 +8,7 @@ https://groups.io/g/BITX20/files/KE7ER/si5351bx_0_0.ino
 The code uses 32-bit integer math only, no float number math. I2C writes to the output Multisynth control registers are burst mode, 8 bytes per frequency change. When running on Raspberry Pi Pico board, the frequency update rate is about 1000 per second when using 400k I2C rate, or about 500 per second when using 100k.
 The PLL frequency is constant and is an integer multiple of the crystal frequency. This is suitable for HF.
 
-TODO: 
- - quadrature output
+9/29/2024 : Added si5351_iq.py . Generates I/Q quadrature signals on CLK0/CLK1.
+
+TODO:
  - complete VFO control program, with rotary encoder and 16x2 LCD display.
